@@ -7,6 +7,7 @@
     --color-brown-800: hsl(14, 45%, 36%);
     --color-rose-800: hsl(332, 51%, 32%);
     --color-rose-50: hsl(330, 100%, 98%);
+    --color-footer: hsl(228, 45%, 44%);
 }
 
 @font-face {
@@ -25,9 +26,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    letter-spacing: 0px;
+    line-height: 1.50;
 }
 
 body {
+    background-color: var(--color-stone-100);
     font-family: 'Outfit', sans-serif;
     min-height: 100vh;
     display: flex;
@@ -37,13 +41,15 @@ body {
 }
 
 article {
-    width: 100%;
+    background-color: var(--color-white);
+    width: 375px;
     max-width: 46rem;
     margin: auto;
 }
 
 img {
     width: 100%;
+    height: 100%;
 }
 
 .card-content {
@@ -68,15 +74,12 @@ h2 {
 
 h1 {
     font-size: clamp(2.25rem, 4vw, 2.5rem);
-    line-height: 100%;
-}
-
-p {
-    line-height: 150%;
+    line-height: 1;
 }
 
 .preparation-time {
     background-color: var(--color-rose-50);
+    border-radius: 12px;
     padding: 1.45rem;
     display: flex;
     flex-direction: column;
@@ -96,14 +99,12 @@ p {
     font-size: 1rem;
     display: flex;
     flex-direction: column;
-    gap: 0.55rem;
-    line-height: 1;
+    gap: 0.5rem;
 }
 
 .time-list li {
     color: var(--color-stone-600);
     padding-left: 1rem;
-    line-height: 1.50;
 }
 
 .time-list li::marker {
@@ -112,11 +113,29 @@ p {
     line-height: 1;
 }
 
+.list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    margin-left: -1.875rem;
+    gap: 1.625rem;
+}
+
+.list::before {
+    display: inline-block;
+    content: "";
+    width: 0.25rem;
+    height: 0.25rem;
+    border-radius: 50%;
+    background-color: var(--color-rose-800);
+}
+
 .attribution {
     font-size: 0.6875rem;
     text-align: center;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--color-footer);
 }
