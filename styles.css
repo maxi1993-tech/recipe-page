@@ -10,6 +10,7 @@
     --color-rose-50: hsl(330, 100%, 98%);
     --color-footer: hsl(228, 45%, 44%);
 }
+
 /* Fonts */
 @font-face {
     font-family: 'Outfit';
@@ -22,6 +23,7 @@
     src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
     font-weight: 100 900;
 }
+
 /* Reset */
 * {
     box-sizing: border-box;
@@ -30,6 +32,7 @@
     letter-spacing: 0px;
     line-height: 1.50;
 }
+
 /* Base */
 body {
     background-color: var(--color-stone-100);
@@ -40,6 +43,7 @@ body {
     align-items: center;
     margin: auto;
 }
+
 /* Layout */
 article {
     background-color: var(--color-white);
@@ -47,11 +51,13 @@ article {
     max-width: 46rem;
     margin: auto;
 }
+
 /* Image */
 img {
     width: 100%;
     display: block;
 }
+
 /* Card */
 .card-content {
     padding: 2.5rem 2rem;
@@ -66,6 +72,7 @@ img {
     align-items: flex-start;
     gap: 1.5rem;
 }
+
 /* Typography */
 h1,
 h2 {
@@ -74,9 +81,10 @@ h2 {
 }
 
 h1 {
-    font-size: clamp(2.25rem, 4vw, 2.5rem);
+    font-size: clamp(2.25rem, 2vw, 2.5rem);
     line-height: 1;
 }
+
 /* Preparation time */
 .preparation-time {
     background-color: var(--color-rose-50);
@@ -85,7 +93,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.85rem;
+    gap: 1rem;
 }
 
 .preparation-time>h2 {
@@ -94,40 +102,30 @@ h1 {
     font-size: 1.25rem;
     line-height: 1;
 }
-/* Time list */
-.time-list {
-    padding-left: 1.35rem;
+
+/* Recipe list */
+.recipe-list {
     font-size: 1rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
-.time-list li {
-    color: var(--color-stone-600);
-    padding-left: 1rem;
-}
-
-.time-list li::marker {
-    color: var(--color-rose-800);
-    font-size: 0.75rem;
-    line-height: 1;
-}
-
-.list {
+.recipe-list li {
     list-style-type: none;
     display: flex;
     align-items: center;
-    padding-left: 0;
-    margin-left: -1.875rem;
-    gap: 1.625rem;
+    gap: 1.85rem;
+    padding-left: 0.5rem;
+    
 }
 
-.list::before {
+.recipe-list li::before {
     display: inline-block;
+    flex-shrink: 0;
     content: "";
-    width: 0.25rem;
-    height: 0.25rem;
+    width: 4px;
+    height: 4px;
     border-radius: 50%;
     background-color: var(--color-rose-800);
 }
@@ -141,13 +139,6 @@ h1 {
 .ingredients>h2 {
     color: var(--color-brown-800);
     line-height: 1;
-}
-
-.ingredients-list {
-    list-style-position: inside;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
 }
 /* Attribution */
 .attribution {
