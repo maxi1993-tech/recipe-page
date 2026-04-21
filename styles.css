@@ -28,6 +28,7 @@
 }
 
 body {
+    font-family: 'Outfit', sans-serif;
     width: 23.4375rem;
     min-height: 100vh;
     display: flex;
@@ -46,6 +47,27 @@ img {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+h1,
+h2 {
+    font-family: 'YoungSerif', sans-serif;
+}
+
+h1 {
+    font-size: 2.25rem;
+    line-height: 100%;
+}
+
+p {
+    line-height: 150%;
 }
 
 .attribution {
