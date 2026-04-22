@@ -36,6 +36,7 @@
 /* Base */
 body {
     background-color: var(--color-stone-100);
+    color: var(--color-stone-600);
     font-family: 'Outfit', sans-serif;
     min-height: 100vh;
     display: flex;
@@ -45,13 +46,13 @@ body {
 }
 
 hr {
-    color: var(--color-stone-150);
+    border-color: var(--color-stone-150);
 }
 
 /* Layout */
 article {
     background-color: var(--color-white);
-    width: 375px;
+    width: 100%;
     max-width: 46rem;
     margin: auto;
 }
@@ -76,11 +77,6 @@ img {
     align-items: flex-start;
     gap: 1.5rem;
 }
-
-.card-header p {
-    color: var(--color-stone-600);
-}
-
 /* Typography */
 h1,
 h2 {
@@ -97,11 +93,6 @@ h1 {
 strong {
     color: var(--color-stone-900);
 }
-
-li {
-    color: var(--color-stone-600);
-}
-
 /* Preparation time */
 .preparation-time {
     background-color: var(--color-rose-50);
@@ -242,4 +233,20 @@ tr:last-child th {
 
 .attribution a {
     color: var(--color-footer);
+}
+/* Media query */
+@media screen and (min-width: 1440px){
+    article {
+        padding: 2.5rem;
+        border-radius: 1.5rem;
+    }
+    .card-content {
+        padding: 2.5rem 0 0 0;
+    }
+    img {
+        border-radius: 12px;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
 }
