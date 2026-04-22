@@ -117,7 +117,7 @@ h1 {
     align-items: center;
     gap: 1.85rem;
     padding-left: 0.5rem;
-    
+
 }
 
 .recipe-list li::before {
@@ -129,6 +129,7 @@ h1 {
     border-radius: 50%;
     background-color: var(--color-rose-800);
 }
+
 /* Ingredients */
 .ingredients {
     display: flex;
@@ -140,6 +141,34 @@ h1 {
     color: var(--color-brown-800);
     line-height: 1;
 }
+
+/* Instructions */
+.instructions-list>h2 {
+    color: var(--color-brown-800);
+    line-height: 1;
+}
+
+.instructions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.counter-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-left: 1.5rem;
+}
+
+.counter-list li {
+   padding-left: 1rem;
+}
+
+.instructions-list>.counter-list li::marker{
+    color: var(--color-brown-800);
+}
+
 /* Attribution */
 .attribution {
     font-size: 0.6875rem;
