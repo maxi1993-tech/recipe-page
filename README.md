@@ -22,7 +22,7 @@ A responsive recipe page built from scratch with semantic HTML and CSS.
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Recipe page solution screenshot](./screenshot.png)
 
 ### Links
 
