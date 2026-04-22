@@ -44,6 +44,10 @@ body {
     margin: auto;
 }
 
+hr{
+    color: var(--color-stone-150);
+}
+
 /* Layout */
 article {
     background-color: var(--color-white);
@@ -162,13 +166,59 @@ h1 {
 }
 
 .counter-list li {
-   padding-left: 1rem;
+    padding-left: 1rem;
 }
 
-.instructions-list>.counter-list li::marker{
+.instructions-list>.counter-list li::marker {
     color: var(--color-brown-800);
 }
 
+/* Nutrition */
+.nutrition-table {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.nutrition-table>h2 {
+    color: var(--color-brown-800);
+    line-height: 1;
+}
+
+caption {
+    text-align: left;
+    color: var(--color-stone-600);
+    padding-bottom: 0.75rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+td, th {
+    padding: 0.75rem;
+    border-bottom: 1px solid var(--color-stone-150);
+}
+
+th {
+    padding-left: 2rem;
+    color: var(--color-stone-600);
+    font-style: normal;
+    font-weight: 500;
+}
+
+td {
+    padding-right: 2.25rem;
+    color: var(--color-brown-800);
+    font-weight: bold;
+}
+
+tr:last-child td,
+tr:last-child th {
+    border-bottom: none;
+}
 /* Attribution */
 .attribution {
     font-size: 0.6875rem;
